@@ -13,7 +13,7 @@ RUN cd $GOPATH/src/$REPOSITORY && \
         make build-trivy-to-vuls && mv trivy-to-vuls $GOPATH/bin && \
         make build-future-vuls && mv future-vuls $GOPATH/bin
 
-FROM alpine:3.15
+FROM alpine:3
 
 ENV LOGDIR /var/log/vuls
 ENV WORKDIR /vuls
